@@ -1,6 +1,10 @@
 
 // Base Classes
 
+* {
+    box-sizing: border-box;
+}
+
 .non-semantic-protector { 
     position: relative; 
     z-index: 1; 
@@ -163,13 +167,30 @@ ul {
         }
     }
 }
+.hero {
+    .hero-inner {
+        margin: 2em 0 0 2em;
+        width: calc(100% - 4em);
+        justify-content: center;
+        background-color: $wg-black;
+        padding: 5em;
+        background-image: url('../images/watchcliff.jpg');
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: screen;
+        h1 {
+            color: white;
+            text-shadow: 5px 5px $wg-black;
+        }
+    }
+}
 .content-wrap {
     display: flex;
     position: relative;
     .blog {
         background-color: $wg-offwhite;
         margin: 2em 1em 2em 2em;
-        max-width: 70%;
+        width: calc(70% - 3em);
         .blog-inner {
             h1::first-letter {
                 color: $wg-orange;
@@ -218,7 +239,7 @@ ul {
         margin: 2em 2em 2em 1em;
         color: $wg-offwhite;
         text-align: center;
-        max-width: 30%;
+        width: calc(30% - 3em);
         .sidebar-inner {
             .sidebar-cta {
                 padding: 2em;

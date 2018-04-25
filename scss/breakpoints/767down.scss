@@ -3,10 +3,23 @@
     margin: 0 auto;
 }
 
+.hero {
+    .hero-inner {
+        width: 100%;
+        padding: 2em;
+        margin: 0;
+        h1 {
+            color: white;
+            text-shadow: 5px 5px $wg-black;
+            font-size: 2.2em;
+        }
+    }
+}
+
 .content-wrap {
     flex-direction: column;
     .blog {
-        max-width: 100%;
+        width: 100%;
         margin: 0;
         .blog-inner {
             .blog-copy {
@@ -31,7 +44,7 @@
     }
     .sidebar {
         margin: 0;
-        max-width: 100%;
+        width: 100%;
     }
 }
 .footer {

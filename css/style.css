@@ -457,6 +457,9 @@ h6, .h6 {
   text-transform: uppercase;
   letter-spacing: 4.333px; }
 
+* {
+  box-sizing: border-box; }
+
 .non-semantic-protector {
   position: relative;
   z-index: 1; }
@@ -581,13 +584,27 @@ ul {
   .wg-header .wg-header-inner .nav .header-cta {
     margin: 0 1em 0 auto; }
 
+.hero .hero-inner {
+  margin: 2em 0 0 2em;
+  width: calc(100% - 4em);
+  justify-content: center;
+  background-color: #212121;
+  padding: 5em;
+  background-image: url("../images/watchcliff.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: screen; }
+  .hero .hero-inner h1 {
+    color: white;
+    text-shadow: 5px 5px #212121; }
+
 .content-wrap {
   display: flex;
   position: relative; }
   .content-wrap .blog {
     background-color: #f9f9f9;
     margin: 2em 1em 2em 2em;
-    max-width: 70%; }
+    width: calc(70% - 3em); }
     .content-wrap .blog .blog-inner h1::first-letter {
       color: #C99B4F; }
     .content-wrap .blog .blog-inner .blog-copy {
@@ -623,7 +640,7 @@ ul {
     margin: 2em 2em 2em 1em;
     color: #f9f9f9;
     text-align: center;
-    max-width: 30%; }
+    width: calc(30% - 3em); }
     .content-wrap .sidebar .sidebar-inner .sidebar-cta {
       padding: 2em;
       background: linear-gradient(rgba(33, 33, 33, 0.64), rgba(33, 33, 33, 0.64)), url(../images/watch-hands-moving.gif);
@@ -727,10 +744,18 @@ ul {
   .wrap {
     width: 98%;
     margin: 0 auto; }
+  .hero .hero-inner {
+    width: 100%;
+    padding: 2em;
+    margin: 0; }
+    .hero .hero-inner h1 {
+      color: white;
+      text-shadow: 5px 5px #212121;
+      font-size: 2.2em; }
   .content-wrap {
     flex-direction: column; }
     .content-wrap .blog {
-      max-width: 100%;
+      width: 100%;
       margin: 0; }
       .content-wrap .blog .blog-inner .blog-copy {
         font-size: 1.1em; }
@@ -744,7 +769,7 @@ ul {
         display: none; }
     .content-wrap .sidebar {
       margin: 0;
-      max-width: 100%; }
+      width: 100%; }
   .footer {
     flex-direction: column; }
     .footer .img-wrap {
